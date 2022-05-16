@@ -7,6 +7,7 @@
   --primary-color: hsl(170, 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
+  --brand-beige: hsl(39, 100%, 97%);
 
   font-size: 62.5%;
 }
@@ -16,7 +17,7 @@ body {
   font-size: 1.6rem;
   text-align: center;
 }
-header { 
+header {
   width: 37.5rem;
   margin: auto;
   margin-top: 4.1rem;
@@ -26,7 +27,6 @@ h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
   margin-bottom: 1.6rem;
-
 }
 
 h1 {
@@ -50,23 +50,41 @@ button {
   background-color: var(--primary-color);
 
   border: none;
-  border-radius:4rem;
+  border-radius: 4rem;
 
   margin-bottom: 6rem;
 
   height: 6.2rem;
-  width:26.3rem;
+  width: 26.3rem;
 
   color: #fff;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
 
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap:1.6rem;
+  gap: 1.6rem;
 
   margin: auto;
+}
 
+ .stats {
+  background-color: var(--brand-beige);
+  width: 32.7rem;
+  height: 47rem;
+  margin-inline: auto;
+}
+
+.stats h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--headline);
+
+  padding-top:4rem;
+}
+
+.stats p {
+  color: var(--primary-color);
 }
