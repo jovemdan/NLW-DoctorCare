@@ -27,6 +27,8 @@ body {
   font-family: 'DM Sans';
   font-size: 1.6rem;
   text-align: center;
+
+  overflow: overlay;
 }
 
 .content {
@@ -161,7 +163,7 @@ nav .content {
 }
 
 nav.scroll {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   width: 100vw;
 }
 
