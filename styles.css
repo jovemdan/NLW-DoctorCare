@@ -45,7 +45,7 @@ body {
 
 /* classe que põe limite no conteúdo e centraliza */
 .wrapper {
-  width: 37.5rem;
+  width: min(50rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -182,6 +182,10 @@ nav button {
   cursor: pointer;
 }
 
+nav .menu,
+nav .close-menu {
+  position: fixed;
+}
 /* ============================ MENU-EXPANDED ============================ */
 
 body.menu-expanded {
@@ -209,7 +213,6 @@ body.menu-expanded .close-menu {
 }
 
 body.menu-expanded .menu {
-  position: fixed;
   top: 0;
   left: 0;
   background: var(--primary-color);
@@ -317,7 +320,7 @@ body.menu-expanded button path {
 }
 
 #home .stats {
-  width: 32.7rem;
+  width: 100%;
   padding-block: 4rem;
   margin-inline: auto;
 
@@ -467,4 +470,37 @@ footer .social-links {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/* ============================ RESPONSIVE ============================ */
+
+@media (min-width: 1024px) {
+  /* ============================ GERAL ============================ */
+  .wrapper {
+    width: min(112rem, 100%);
+  }
+
+  /* ============================ NAVIGATION ============================ */
+
+  /* reset */
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+  }
+
+  nav#navigation .close-menu,
+  nav#navigation .open-menu,
+  nav#navigation .social-links {
+    display: none;
+  }
 }
